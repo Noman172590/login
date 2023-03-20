@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Form</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+            color:red
+            
+        }
+        a{
+            text-decoration: none;
+
+        }
+        li{
+            list-style-type: none;
+            text-align: center;
+            font-size: 36px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .reset{
+            padding: 15px;
+            color: tomato;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a style="margin: 0 10px;" href="">Home</a> <a style="margin: 0 10px;" href="">Form</a><a style="margin: 0 10px;" href="">Table</a> <a style="margin: 0 10px;" href="">Semantic</a> <a href="">Media</a> </li>
+                
+            </ul>
+        </nav>
+        <h2 style="text-align: center; background-color: tomato; color: white;">Welcome to our University Page</h2>
+    </header>
+    
+    <form style="text-align: center;">
+        <label for="name">Name :
+            <input id="name" type="text" placeholder="Your Name">
+        </label>
+        
+        <label for="email">Email:
+            <input id="email" type="email" placeholder="Your Email">
+        </label>
+        
+        <label for="phone">Mobile:
+            <input id="phone" type="number" placeholder="Your Phone Number">
+        </label>
+
+        <fieldset>
+            <legend style=" color: tomato;">Where did you study last?</legend>
+            <label for="college">
+                <input type="radio" name="college" id="college">
+                College
+            </label>
+            <label for="Diploma">
+                <input type="radio" name="Diploma" id="Diploma">
+                Diplom
+            </label>
+            <label for="vocational">
+                <input type="radio" name="vocational" id="vocational">
+                Vocational
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend style=" color: tomato;">what do you want to study</legend>
+            <label for="CSE">
+                <input type="radio" name="CSE" id="CSE">
+                CSE
+            </label>
+            <label for="EEE">
+                <input type="radio" name="EEE" id="EEE">
+                EEE
+            </label>
+            <label for="civel">
+                <input type="radio" name="civel" id="civel">
+                civel
+            </label>
+        </fieldset>
+        <fieldset style="margin: 10px;">
+            <legend style=" color: tomato;">how did you feel about our University</legend>
+            <textarea name="" id="" cols="60" rows="3"></textarea>
+        </fieldset>
+        <input class="reset" type="reset" value="Reset">
+        <input class="reset" type="submit" value="Submit">
+    </form>
+</body>
+</html>
